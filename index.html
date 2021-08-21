@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac book pro</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css style-->
+    <style>
+        button:hover{background: rgb(5, 90, 16);
+        color:white}
+        .bordebtm{
+          border-bottom: 3px solid black;
+        }
+    </style>
+    
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-5">
+                    <img src="images/mac.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-7">
+                    <h2> Customize your Blue 24-inch iMac with Apple M1 chip</h2>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU. and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt /USB 4 ports Magic Mouse Magic Keyboard - Us English</p>
+                    <!--memory -->
+                  <div class="my-4">
+                    <h5>Memory</h5>
+                        <button id="8GB-memory" >8GB unified memory</button>
+                        <button id="16GB-memory">16GB unified memory</button>
+                  </div>
+                    <!--Storage-->
+                  <div>
+                    <h5>Storage</h5>
+                        <button id="256GB-Ssd" >256GB SSd storage</button>
+                        <button id="512GB-Ssd">512GB SSd storage</button>
+                        <button id="1TB-Ssd">1TB SSd storage</button>
+                  </div>
+                    <!--delivery-->
+                  <div class="my-4">
+                    <h5>Choose your delivery option</h5>
+                        <button id="free-delivery">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button id="paid-delivery">Friday, Aug 21 Delivery charge $20</button>
+                        
+                  </div>
+                  <!-- Price calculation  -->
+                  <div class="row">
+                    <div class="col-6">
+                     <div>
+                        <div class="d-flex justify-content-between border-bottom">
+                            <h5 >Best Price </h5>
+                            <h5>$<span id="best-price">1299</span> </h5>
+                      </div>
+                        <div class="d-flex justify-content-between border-bottom">
+                            <h5>Extra Memory Cost</h5>
+                            <h5>$<span id="extra-memory">0</span> </h5>
+                      </div>
+                        <div class="d-flex justify-content-between border-bottom">
+                            <h5>Extra Storage Cost</h5>
+                            <h5>$<span  id="extra-storage">0</span> </h5>
+                      </div>
+                        <div class="d-flex justify-content-between bordebtm">
+                            <h5>Delivery charge</h5>
+                            <h5>$<span  id="delivery">0</span> </h5>
+                      </div>
+                        <div class="d-flex justify-content-between ">
+                            <h5>Total Price</h5>
+                            <h5>$<span  id="total-price">1299</span> </h5>
+                      </div>
+                             <div class="promocode mt-4">
+                               <h5>Apply Promo code</h5>
+                                <input type="text" id="coupon-input">
+                                 <button class="btn btn-danger" id="coupon-btn"> Apply</button>
+                            </div>
+                      
+                        </div>
+                      </div>
+                      <div class="col-6"></div>
+                  </div>
+                </div>
+                  <div class="border-top text-center my-4 pb-5">
+                      <h2> Total : $ <span id="total-paymentprice">1299</span></h2>
+                  </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <!-- js file -->
+    <script src="macbook.js"></script>
+</body>
+</html>
